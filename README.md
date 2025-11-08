@@ -62,12 +62,16 @@ The correct answer gets 10 points for each testing data.
 
 ## References
 Please provide the code along with its reference. For example, you can cite it as: ```# ChatGPT, respond to “your prompt,” on February 16, 2023```. Below is an example of a reference format summarizing the use of ChatGPT for R programming
-
->You are the R Language expert.
->Please help me to write a function called “k_fold”.
->Using a given dataset to train the random forest model, and using the k-fold cross-validation to evaluate the best model parameters. Here is the instruction for the function requirements:\
->Function name: k_fold\
->Function parameters:
+提供Gemini 2.5Pro : 
+"
+write a program with a function named alignment, ie.
+def alignment(input_path, score_path, output_path, aln, gap):
+If there is more than one local alignment with the same highest score, you should output local alignments with the maximum length.
+"並提供input, output 範本
+Gemini 提供的python, 針對Local Alignments 部分要調整Smith–Waterman結束的條件，
+Gemini 提供在Trace back 遇到矩陣分數0時停止Trace back，並輸出序列，
+但在gradescope第三題可看出比對結果為0也屬於結果序列一部分，
+所以需調整終止條件，讓比對為0的部分也輸出到結果序列中。
 
 
 
